@@ -1,0 +1,46 @@
+{
+  "name": "rtc",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --open ",
+    "build": "vue-cli-service build",
+    "dev-build": "vue-cli-service build --mode development",
+    "staging-build": "vue-cli-service build --mode staging",
+    "lint": "vue-cli-service lint --fix",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "echarts": "^4.1.0",
+    "element-ui": "^2.3.4",
+    "qs": "^6.5.1",
+    "vue": "^2.5.13",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^6.0.0",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/qs": "^6.5.1",
+    "@vue/cli-plugin-babel": "^3.0.0-beta.6",
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.6",
+    "@vue/cli-plugin-typescript": "^3.0.0-beta.6",
+    "@vue/cli-service": "^3.0.0-beta.6",
+    "@vue/eslint-config-prettier": "^3.0.0-beta.6",
+    "@vue/eslint-config-typescript": "^3.0.0-beta.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "vue-template-compiler": "^2.5.13"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
