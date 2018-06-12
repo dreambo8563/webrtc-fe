@@ -1,5 +1,5 @@
-const path = require("path")
-const projectRoot = path.resolve(__dirname)
+const path = require("path");
+const projectRoot = path.resolve(__dirname);
 // module.exports = {
 //   lintOnSave: false,
 //   chainWebpack: config => {
@@ -45,11 +45,11 @@ module.exports = {
   },
   chainWebpack: config => {
     config.plugin("html").tap(args => {
-      args[0].favicon = "./public/favicon.ico"
-      return args
-    })
-    config.plugins.delete("prefetch")
-    config.resolve.alias.set("@assets", path.join(projectRoot, "src/assets"))
+      args[0].favicon = "./public/favicon.ico";
+      return args;
+    });
+    config.plugins.delete("prefetch");
+    config.resolve.alias.set("@assets", path.join(projectRoot, "src/assets"));
 
     // config.externals({
     //   "element-ui": "Element"
@@ -67,4 +67,4 @@ module.exports = {
     //     name: "img/[name].[hash:8].[ext]"
     //   })
   }
-}
+};
